@@ -82,6 +82,10 @@ button:hover {
   overflow-x: auto;
 }
 
+.formFont {
+    font-size: x-large;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -92,6 +96,7 @@ th, td {
   padding: 10px;
   text-align: center;
   border-bottom: 1px solid #1f2a33;
+    font-size: x-large;
 }
 
 th {

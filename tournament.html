@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CS 1.3 Tournament Registration</title>
+    <link rel="stylesheet" href="tournament.css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CS 1.3 Tournament Registration</h1>
+        <p class="subtitle">February 01 2026</p>
+
+        <!-- REGISTRATION FORM -->
+        <form id="tournamentForm">
+            <div class="card" style="font-size: x-large;">
+                <h2>Team Information</h2>
+
+                <input type="text"  class="formFont" id="teamName" placeholder="Team Name" required />
+
+                <div class="players">
+                    <input type="text" placeholder="Player 1" class="formFont" required />
+                    <input type="text" placeholder="Player 2" class="formFont" required />
+                    <input type="text" placeholder="Player 3" class="formFont" required />
+                    <input type="text" placeholder="Player 4" class="formFont" required />
+                    <input type="text" placeholder="Player 5" class="formFont" required />
+                </div>
+
+                <input type="tel" class="formFont" id="phone" inputmode="numeric" pattern="[0-9]{8,}"
+                    placeholder="Phone Number (03XXXXXX)" required />
+
+                <div class="form-group" style="align-items: center;">
+                    <h1>Choose Tournament Level</h1>
+                    <div class="class-options">
+                        <label style="color: brown; font-size: 50px;">
+                            <input type="radio" name="tournamentLevel" value="ABTAL" required /> ABTAL
+                        </label>
+                        <label style="color: orange; font-size: 50px;">
+                            <input type="radio" name="tournamentLevel" value="WASAT" required /> WASAT
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit">REGISTER TEAM</button>
+            </div>
+        </form>
+
+        <!-- REGISTERED TEAMS -->
+        <div class="tables-container">
+            <div class="card">
+
+                <h2>Registered Teams - <span style="color: brown;">ABTAL</span></h2>
+
+                <div class="table-wrapper">
+                    <table id="abtalTable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Team</th>
+                                <th>P1</th>
+                                <th>P2</th>
+                                <th>P3</th>
+                                <th>P4</th>
+                                <th>P5</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Registered Teams - <span style="color: orange;">WASAT</span></h2>
+
+                <div class="table-wrapper">
+                    <table id="wasatTable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Team</th>
+                                <th>P1</th>
+                                <th>P2</th>
+                                <th>P3</th>
+                                <th>P4</th>
+                                <th>P5</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <script type="module" src="tournament.js"></script>
+</body>
+
+</html>
