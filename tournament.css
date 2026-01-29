@@ -144,3 +144,29 @@ tr:hover {
 .table-wrapper {
   overflow-x: auto;
 }
+
+#registerBtn {
+    font-size: xx-large;
+    color: white;
+}
+
+#registerBtn {
+    background: linear-gradient(135deg, #7b5cff, #9b6bff);
+    box-shadow: 0 10px 26px rgba(123, 92, 255, 0.45);
+    color: #000000;
+    border: none;
+    border-radius: 14px;
+    /*padding: 14px 28px;*/
+    font-size: 36px;
+    font-weight: 600;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 18px;   
+    display: flex;
+
+    align-self: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 20px auto 0 auto;
+}
