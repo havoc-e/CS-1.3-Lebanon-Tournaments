@@ -25,7 +25,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 /* COLLECTION REFERENCE */
-const teamsCol = collection(db, "tournaments", "feb012026", "teams");
+const teamsCol = collection(db, "tournaments", "feb152026", "teams");
 
 const form = document.getElementById("tournamentForm");
 const abtalTableBody = document.querySelector("#abtalTable tbody");
@@ -106,3 +106,4 @@ onSnapshot(q, (snapshot) => {
 
     });
 });
+
