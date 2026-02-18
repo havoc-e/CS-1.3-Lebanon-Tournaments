@@ -11,42 +11,8 @@
 
     <div class="container">
 
-        <h1>CS 1.3 Tournament Registration</h1>
-        <p class="subtitle">February 01 2026</p>
-
-        <!-- REGISTRATION FORM -->
-        <form id="tournamentForm">
-            <div class="card" style="font-size: x-large;">
-                <h2>Team Information</h2>
-
-                <input type="text"  class="formFont" id="teamName" placeholder="Team Name" required />
-
-                <div class="players">
-                    <input type="text" placeholder="Player 1" class="formFont" required />
-                    <input type="text" placeholder="Player 2" class="formFont" required />
-                    <input type="text" placeholder="Player 3" class="formFont" required />
-                    <input type="text" placeholder="Player 4" class="formFont" required />
-                    <input type="text" placeholder="Player 5" class="formFont" required />
-                </div>
-
-                <input type="tel" class="formFont" id="phone" inputmode="numeric" pattern="[0-9]{8,}"
-                    placeholder="Phone Number (03XXXXXX)" required />
-
-                <div class="form-group" style="align-items: center;">
-                    <h1>Choose Tournament Level</h1>
-                    <div class="class-options">
-                        <label style="color: brown; font-size: 50px;">
-                            <input type="radio" name="tournamentLevel" value="ABTAL" required /> ABTAL
-                        </label>
-                        <label style="color: orange; font-size: 50px;">
-                            <input type="radio" name="tournamentLevel" value="WASAT" required /> WASAT
-                        </label>
-                    </div>
-                </div>
-
-                <button id="registerBtn" type="submit" disabled>⚡REGISTER TEAM⚡</button>
-            </div>
-        </form>
+        <h1>CS 1.3 Tournament</h1>
+        <p class="subtitle" id="tournamentTitle"></p>
 
         <!-- REGISTERED TEAMS -->
         <div class="tables-container">
@@ -95,8 +61,6 @@
                 </div>
 
             </div>
-
-
             <script type="module" src="script.js"></script>
 </body>
 
