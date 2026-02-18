@@ -183,8 +183,6 @@ if (window.location.pathname.includes("oldtournament.html")) {
         }
 
         titleElement.innerText = formatDateString(date);
-
-        // Optional: change browser tab title too
-        document.title = formatDateString(date);
     }
+
 }
